@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/globalindo">
+
+    <fragment
+        android:id="@+id/globalindo"
+        android:name="com.project.coronainfowithmvvm.ui.CoronaGlobaldanIndo.Globalindo"
+        android:label="globalindo_fragment"
+        tools:layout="@layout/globalindo_fragment" >
+        <action
+            android:id="@+id/action_globalindo_to_barchartFragment"
+            app:destination="@id/barchartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coronaGlobal"
+        android:name="com.project.coronainfowithmvvm.ui.CoronaGlobal.CoronaGlobal"
+        android:label="corona_global_fragment"
+        tools:layout="@layout/corona_global_fragment" />
+    <fragment
+        android:id="@+id/coronaindoprov"
+        android:name="com.project.coronainfowithmvvm.ui.CoronaIndoprov.Coronaindoprov"
+        android:label="coronaindoprov_fragment"
+        tools:layout="@layout/coronaindoprov_fragment" />
+    <fragment
+        android:id="@+id/barchartFragment"
+        android:name="com.project.coronainfowithmvvm.ui.CoronaGlobaldanIndo.Barchart.BarchartFragment"
+        android:label="fragment_barchart"
+        tools:layout="@layout/fragment_barchart" />
+
+
+</navigation>
